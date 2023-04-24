@@ -1,7 +1,7 @@
-NAME		=	a.out
-SRCS		=	main.cpp Fixed.cpp
+NAME		=	claptrap
+SRCS		=	main.cpp ClapTrap.cpp 
 OBJS		=	$(SRCS:.cpp=.o)
-HEADERS		=	Fixed.hpp
+HEADERS		=	ClapTrap.hpp
 
 CXX		=	c++
 CXXFLAGS	=	-Werror -Wall -Wextra -std=c++98
