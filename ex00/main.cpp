@@ -25,5 +25,6 @@ int main(void)
 		d.attack("c");
 		c.takeDamage(d.getDamage());
 	}
+	d.attack("c");
 	return 0;
 }
