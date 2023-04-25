@@ -21,7 +21,7 @@ int main(void)
 		d.takeDamage(a.getDamage());
 	}
 	d.beRepaired(10);
-	if (a.getHitPoints() != 0 && a.getEnergyPoints() != 0) {
+	if (d.getHitPoints() != 0 && d.getEnergyPoints() != 0) {
 		d.attack("c");
 		c.takeDamage(d.getDamage());
 	}
