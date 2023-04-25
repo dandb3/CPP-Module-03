@@ -48,17 +48,17 @@ const std::string& ClapTrap::getName(void) const
 	return this->name_;
 }
 
-const unsigned int ClapTrap::getHitPoints(void) const
+unsigned int ClapTrap::getHitPoints(void) const
 {
 	return this->hitPoints_;
 }
 
-const unsigned int ClapTrap::getEnergyPoints(void) const
+unsigned int ClapTrap::getEnergyPoints(void) const
 {
 	return this->energyPoints_;
 }
 
-const unsigned int ClapTrap::getDamage(void) const
+unsigned int ClapTrap::getDamage(void) const
 {
 	return this->damage_;
 }
