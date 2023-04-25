@@ -20,9 +20,9 @@ public:
 	ClapTrap& operator=(const ClapTrap& claptrap);
 
 	const std::string& getName(void) const;
-	const unsigned int getHitPoints(void) const;
-	const unsigned int getEnergyPoints(void) const;
-	const unsigned int getDamage(void) const;
+	unsigned int getHitPoints(void) const;
+	unsigned int getEnergyPoints(void) const;
+	unsigned int getDamage(void) const;
 	void setName(std::string name);
 	void setDamage(unsigned int damage);
 
