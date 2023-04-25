@@ -1,5 +1,4 @@
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(void)
 {
@@ -9,7 +8,10 @@ int main(void)
 	FragTrap c("c");
 	ScavTrap e("e");
 	ScavTrap f("f");
+	DiamondTrap g("g");
+	DiamondTrap h("h");
 	c = d;
+	f = g;
 	b.setName("b");
 	if (a.getHitPoints() != 0 && a.getEnergyPoints() != 0) {
 		a.attack("b");
@@ -29,5 +31,10 @@ int main(void)
 	d.highFivesGuys();
 	c.highFivesGuys();
 	e.guardGate();
+	if (h.getHitPoints() != 0 && h.getEnergyPoints() != 0) {
+		h.attack("g");
+		g.takeDamage(h.getDamage());
+	}
+	h.whoAmI();
 	return 0;
 }

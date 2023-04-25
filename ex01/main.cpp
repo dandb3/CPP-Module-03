@@ -8,7 +8,6 @@ int main(void)
 	ScavTrap c("c");
 	c = d;
 	b.setName("b");
-	c.setName("c");
 	if (a.getHitPoints() != 0 && a.getEnergyPoints() != 0) {
 		a.attack("b");
 		b.takeDamage(a.getDamage());
