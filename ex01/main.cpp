@@ -24,6 +24,7 @@ int main(void)
 		d.attack("c");
 		c.takeDamage(d.getDamage());
 	}
-	d.attack("c");
+	d.guardGate();
+	c.guardGate();
 	return 0;
 }
